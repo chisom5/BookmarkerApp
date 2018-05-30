@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bookmarker</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="fetchBookmark()">
+    <div class="container">
+        <div>
+            <h3 class="text-muted">Bookmarker</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h2>Bookmark your favorite site</h2>
+            <form id="my_form">
+                <div class="form-group">
+                    <label>Site Name</label>
+                    <input type="text" id="siteName" class="form-control" placeholder="Website name">
+                </div>
+                <div class="form-group">
+                    <label>Site URL</label>
+                    <input type="text" id="siteUrl" class="form-control" placeholder="Website Url">
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <div id="bookmarksResult"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>copright&copy; 2016 Bookmark, Inc.</p>
+        </footer>
+
+    </div>
+    <!-- /container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/bookmark.js"></script>
+</body>
+
+</html>
